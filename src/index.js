@@ -1,16 +1,3 @@
-// Add support for generators to compiled ES5 code.
-//require('./gen_support/regen');
-//require("babel").transform("code", { optional: ["es6.spec.symbols", "regenerator"] });
-/*
-function sleep(millis) {
-  var deferredResult = Q.defer();
-  setTimeout(function() {
-    deferredResult.resolve();
-  }, millis);
-  return deferredResult.promise;
-};
-*/
-
 // ES7, async/await
 function sleep(ms = 0) {
   return new Promise(r => setTimeout(r, ms));

@@ -4,17 +4,20 @@
   "description": "",
   "main": "./build/index.js",
   "scripts": {
-    "start": "./compile.sh && node ./build/index.js",
+    "start": "gulp && node ./build/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "afaur",
   "license": "MIT",
   "dependencies": {
-    "babel": "^5.8.23",
     "diskspace": "^0.1.7",
     "glob": "^5.0.14"
   },
   "devDependencies": {
-    "babel-runtime": "^5.8.25"
+    "babel": "^5.8.23",
+    "babel-runtime": "^5.8.25",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1",
+    "rimraf": "^2.4.3"
   }
 }
